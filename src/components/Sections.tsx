@@ -12,7 +12,7 @@ const Tabs = {
 type TabsType = typeof Tabs[keyof typeof Tabs];
 
 const Sections = () => {
-    const [activeTab, setActiveTab] = useState<TabsType>(Tabs.Contact)
+    const [activeTab, setActiveTab] = useState<TabsType>(Tabs.About)
 
     return (
         <div className={'flex flex-col mt-10 items-center justify-center'}>
