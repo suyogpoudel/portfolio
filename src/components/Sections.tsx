@@ -12,7 +12,7 @@ const Tabs = {
 type TabsType = typeof Tabs[keyof typeof Tabs];
 
 const Sections = () => {
-    const [activeTab, setActiveTab] = useState<TabsType>(Tabs.Contact)
+    const [activeTab, setActiveTab] = useState<TabsType>(Tabs.About)
 
     return (
         <div className={'flex flex-col mt-10 items-center justify-center'}>
@@ -37,7 +37,7 @@ const Sections = () => {
                 </button>
             </div>
 
-            <div className="w-full text-center text-2xl">
+            <div className="w-full">
                 {
                     activeTab === Tabs.About ? <About/> : activeTab === Tabs.Projects ? <Projects/> : <Contact/>
                 }

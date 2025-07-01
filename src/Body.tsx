@@ -29,7 +29,7 @@ const Body = () => {
     }
 
     return (
-        <div className="w-screen h-screen">
+        <div>
             <motion.button onClick={themeSwitch}
                            className="absolute top-5 right-5 p-2 bg-neutral-200 dark:bg-neutral-950 rounded-full cursor-pointer"
 
