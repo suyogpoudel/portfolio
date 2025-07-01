@@ -3,14 +3,16 @@ import About from "./About.tsx";
 import Projects from "./Projects.tsx";
 import Contact from "./Contact.tsx";
 
-enum Tabs {
-    About = 'About',
-    Projects = 'Projects',
-    Contact = 'Contact'
-}
+const Tabs = {
+    About: 'About',
+    Projects: 'Projects',
+    Contact: 'Contact'
+} as const;
+
+type TabsType = typeof Tabs[keyof typeof Tabs];
 
 const Sections = () => {
-    const [activeTab, setActiveTab] = useState<Tabs>(Tabs.Contact)
+    const [activeTab, setActiveTab] = useState<TabsType>(Tabs.Contact)
 
     return (
         <div className={'flex flex-col mt-10 items-center justify-center'}>
