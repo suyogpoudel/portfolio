@@ -1,5 +1,6 @@
 import {IconWorld} from "@tabler/icons-react";
 import {motion} from "motion/react";
+import type {JSX} from "react";
 
 interface ProjectProps {
     texts: { title: string, description: string, link: string },
