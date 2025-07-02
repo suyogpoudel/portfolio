@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import {motion} from "motion/react"
 import {IconMoon, IconSun} from "@tabler/icons-react";
 import Portfolio from "./components/Portfolio.tsx";
+import Footer from "./components/Footer.tsx";
 
 const Body = () => {
     const [isDark, setIsDark] = useState<boolean>(localStorage.getItem('theme') === 'dark' || false)
@@ -29,9 +30,9 @@ const Body = () => {
     }
 
     return (
-        <div>
+        <div className="h-full flex flex-col gap-7">
             <motion.button onClick={themeSwitch}
-                           className="absolute top-5 right-5 p-2 bg-neutral-200 dark:bg-neutral-950 rounded-full cursor-pointer"
+                           className="fixed top-5 right-5 p-2 bg-neutral-200 dark:bg-neutral-950 rounded-full cursor-pointer"
 
                            whileHover={{
                                scale: 1.1,
@@ -54,7 +55,11 @@ const Body = () => {
                 }
             </motion.button>
 
-            <Portfolio/>
+            <main className='flex-1'>
+                <Portfolio/>
+            </main>
+
+            <Footer/>
 
         </div>
     )
