@@ -1,6 +1,5 @@
-import {IconNotes, IconWorld} from "@tabler/icons-react";
+import {IconWorld} from "@tabler/icons-react";
 import {motion} from "motion/react";
-import {JSX} from "react";
 
 interface ProjectProps {
     texts: { title: string, description: string, link: string },
