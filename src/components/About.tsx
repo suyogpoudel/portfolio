@@ -1,11 +1,12 @@
 import {
-    // IconBrandCss3,
-    // IconBrandHtml5,
-    // IconBrandJavascript,
-    // IconBrandReact, IconBrandTailwind,
-    // IconBrandTypescript,
+    IconBrandCss3,
+    IconBrandHtml5,
+    IconBrandJavascript,
+    IconBrandReact, IconBrandTailwind,
+    IconBrandTypescript,
     IconCalendar, IconCompass
 } from "@tabler/icons-react";
+import Skill from "./Skill.tsx";
 
 
 const About = () => {
@@ -32,12 +33,12 @@ const About = () => {
 
                 <p className='text-[24px] opacity-90 mt-5 text-center'>Skills:</p>
                 <ul className='grid grid-cols-2 gap-5 max-sm:gap-2 place-items-center mt-2'>
-                    {/*<Skill title='HTML' icon={<IconBrandHtml5/>}/>*/}
-                    {/*<Skill title='CSS' icon={<IconBrandCss3/>}/>*/}
-                    {/*<Skill title='Tailwind' icon={<IconBrandTailwind/>}/>*/}
-                    {/*<Skill title='Javascript' icon={<IconBrandJavascript/>}/>*/}
-                    {/*<Skill title='Typescript' icon={<IconBrandTypescript/>}/>*/}
-                    {/*<Skill title='React' icon={<IconBrandReact/>}/>*/}
+                    <Skill title='HTML' icon={<IconBrandHtml5/>}/>
+                    <Skill title='CSS' icon={<IconBrandCss3/>}/>
+                    <Skill title='Tailwind' icon={<IconBrandTailwind/>}/>
+                    <Skill title='Javascript' icon={<IconBrandJavascript/>}/>
+                    <Skill title='Typescript' icon={<IconBrandTypescript/>}/>
+                    <Skill title='React' icon={<IconBrandReact/>}/>
                 </ul>
             </div>
 
