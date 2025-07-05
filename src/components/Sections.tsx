@@ -19,19 +19,19 @@ const Sections = () => {
             <div className="flex">
                 <button className={`${
                     activeTab === Tabs.About ? 'bg-neutral-200 dark:bg-neutral-950 scale-110' : ''
-                } rounded-l-lg px-4 py-2 bg-neutral-100 dark:bg-neutral-800 transition-scale duration-300 ease-in-out`}
+                } rounded-l-lg px-4 py-2 bg-neutral-100 dark:bg-neutral-800 transition-scale duration-300 ease-in-out cursor-pointer`}
                         onClick={() => setActiveTab(Tabs.About)}
                 >About
                 </button>
                 <button className={`${
                     activeTab === Tabs.Projects ? 'bg-neutral-200 dark:bg-neutral-950 scale-110' : ''
-                } rounded-none px-4 py-2 bg-neutral-100 dark:bg-neutral-800 transition-scale duration-300 ease-in-out`}
+                } rounded-none px-4 py-2 bg-neutral-100 dark:bg-neutral-800 transition-scale duration-300 ease-in-out cursor-pointer`}
                         onClick={() => setActiveTab(Tabs.Projects)}
                 >Projects
                 </button>
                 <button className={`${
                     activeTab === Tabs.Contact ? 'bg-neutral-200 dark:bg-neutral-950 scale-110' : ''
-                } rounded-r-lg px-4 py-2 bg-neutral-100 dark:bg-neutral-800 transition-scale duration-300 ease-in-out`}
+                } rounded-r-lg px-4 py-2 bg-neutral-100 dark:bg-neutral-800 transition-scale duration-300 ease-in-out cursor-pointer`}
                         onClick={() => setActiveTab(Tabs.Contact)}
                 >Contact
                 </button>

@@ -16,11 +16,8 @@ const Project = ({texts, icon}: ProjectProps) => {
             className='relative overflow-hidden bg-neutral-300 dark:bg-neutral-900 rounded-xl p-6
                        border border-neutral-400/20 backdrop-blur-sm h-full'
             whileHover={{y: -5}}
-            transition={{duration: 0.2}}
+            transition={{duration: 0.3}}
         >
-            <div className='absolute top-0 right-0 p-4 opacity-10 scale-150'>
-                {icon}
-            </div>
 
             <div className='flex flex-col h-full'>
                 {/* Header */}
@@ -47,7 +44,7 @@ const Project = ({texts, icon}: ProjectProps) => {
                                  hover:text-blue-400 border-b border-transparent
                                  hover:border-blue-400 w-fit'
                         whileHover={{x: 5}}
-                        transition={{duration: 0.2}}
+                        transition={{duration: 0.3}}
                     >
                         View Project
                         <IconWorld size={16} className='transition-transform group-hover:translate-x-1'/>
