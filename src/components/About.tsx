@@ -5,7 +5,7 @@ import {
     IconBrandReact, IconBrandTailwind,
     IconBrandTypescript, IconCalendar, IconCompass
 } from "@tabler/icons-react";
-import Skill from "./Skill.tsx";
+import Skill from "./Skill";
 
 
 const About = () => {
