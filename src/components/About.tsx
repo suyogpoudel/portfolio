@@ -7,6 +7,7 @@ import {
 } from "@tabler/icons-react";
 import Skill from "./Skill.tsx";
 
+
 const About = () => {
     return (
         <div className="tabs">
