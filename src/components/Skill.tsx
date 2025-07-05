@@ -1,4 +1,5 @@
 import type {JSX} from "react";
+import {motion} from "motion/react";
 
 interface SkillProps {
     title: string,
@@ -7,10 +8,17 @@ interface SkillProps {
 
 const Skill = ({title, icon}: SkillProps) => {
     return (
-        <li className='skills'>
+        <motion.li className='skills'
+                   whileHover={{
+                       y: -5
+                   }} transition={{
+            duration: 0.3,
+            ease: 'easeInOut'
+        }}
+        >
             {icon}
             {title}
-        </li>
+        </motion.li>
     )
 }
 export default Skill
