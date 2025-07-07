@@ -9,8 +9,25 @@ const Footer = () => {
         <footer>
             <div className='w-full h-[2px] opacity-75 bg-neutral-900 dark:bg-neutral-300'>
 
-                <div className='py-6 px-12 flex justify-between items-center max-sm:px-0 text-lg'>
+                <div
+                    className='py-6 px-12 flex justify-between items-center max-md:px-5 max-sm:px-0 text-lg max-sm:text-md max-md:flex-col max-sm:justify-center max-sm:gap-2'>
                     <p className='flex items-center gap-1'>
+                        Deployed using
+                        <motion.a
+                            href='https://vercel.com/'
+                            target='_blank'
+                            className='inline-flex items-center gap-1 text-blue-500
+                                 hover:text-blue-400 border-b border-transparent
+                                 hover:border-blue-400 w-fit text-lg'
+                            whileHover={{x: 3, y: -3}}
+                            transition={{duration: 0.3}}
+                        >
+                            Vercel
+                            <IconBrandVercel size={16} className='transition-transform group-hover:translate-x-1'/>
+                        </motion.a>
+                    </p>
+
+                    <p className='flex items-center gap-1 text-center'>
                         Built with
                         <motion.a
                             href='https://react.dev/'
@@ -64,21 +81,6 @@ const Footer = () => {
                     </p>
 
 
-                    <p className='flex items-center gap-1'>
-                        Deployed using
-                        <motion.a
-                            href='https://vercel.com/'
-                            target='_blank'
-                            className='inline-flex items-center gap-1 text-blue-500
-                                 hover:text-blue-400 border-b border-transparent
-                                 hover:border-blue-400 w-fit text-lg'
-                            whileHover={{x: 3, y: -3}}
-                            transition={{duration: 0.3}}
-                        >
-                            Vercel
-                            <IconBrandVercel size={16} className='transition-transform group-hover:translate-x-1'/>
-                        </motion.a>
-                    </p>
                 </div>
             </div>
 
